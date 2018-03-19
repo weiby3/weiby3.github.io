@@ -54,7 +54,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -64,6 +64,115 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-高级编程技术-作业3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/19/高级编程技术-作业3/" class="article-date">
+  <time datetime="2018-03-19T09:52:05.000Z" itemprop="datePublished">2018-03-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/19/高级编程技术-作业3/">高级编程技术 作业3</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="5-1-条件测试-：编写一系列条件测试；将每个测试以及你对其结果的预测和实际结果都打印出来。你编写的代码应类似于下面这样："><a href="#5-1-条件测试-：编写一系列条件测试；将每个测试以及你对其结果的预测和实际结果都打印出来。你编写的代码应类似于下面这样：" class="headerlink" title="5-1 条件测试 ：编写一系列条件测试；将每个测试以及你对其结果的预测和实际结果都打印出来。你编写的代码应类似于下面这样："></a>5-1 条件测试 ：编写一系列条件测试；将每个测试以及你对其结果的预测和实际结果都打印出来。你编写的代码应类似于下面这样：</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">car = <span class="string">'subaru'</span></span><br><span class="line">print(<span class="string">"Is car == 'subaru'? I predict True."</span>)</span><br><span class="line">print(car == <span class="string">'subaru'</span>)</span><br><span class="line">print(<span class="string">"\nIs car == 'audi'? I predict False."</span>)</span><br><span class="line">print(car == <span class="string">'audi'</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>详细研究实际结果，直到你明白了它为何为 True 或 False 。</li>
+<li>创建至少 10 个测试，且其中结果分别为 True 和 False 的测试都至少有 5 个。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">(item, itemName, value)</span>:</span></span><br><span class="line">    print(<span class="string">"Is %s == '%s'? I predict True."</span>%(itemName, item))</span><br><span class="line">    print(<span class="keyword">True</span>)</span><br><span class="line">    print(<span class="string">"\nIs %s == '%s'? I predict False."</span>%(itemName, value))</span><br><span class="line">    print(item == <span class="string">'value'</span>)</span><br><span class="line">car = <span class="string">'subaru'</span></span><br><span class="line">test(car, <span class="string">'car'</span>, <span class="string">'audi'</span>)</span><br><span class="line">person = <span class="string">'Link'</span></span><br><span class="line">test(person, <span class="string">'person'</span>, <span class="string">'Zelda'</span>)</span><br><span class="line">test(person, <span class="string">'person'</span>, <span class="string">'Mifa'</span>)</span><br><span class="line">test(person, <span class="string">'person'</span>, <span class="string">'Sidon'</span>)</span><br><span class="line">test(person, <span class="string">'person'</span>, <span class="string">'Dola'</span>)</span><br></pre></td></tr></table></figure>
+<p>##5-2 更多的条件测试 ：你并非只能创建 10 个测试。如果你想尝试做更多的比较，可再编写一些测试，并将它们加入到 conditional_tests.py 中。对于下面列出的各种测试，至少编写一个结果为 True 和 False 的测试。</p>
+<ul>
+<li>检查两个字符串相等和不等。</li>
+<li>使用函数 lower() 的测试。</li>
+<li>检查两个数字相等、不等、大于、小于、大于等于和小于等于。</li>
+<li>使用关键字 and 和 or 的测试。</li>
+<li>测试特定的值是否包含在列表中。</li>
+<li>测试特定的值是否未包含在列表中。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tset = [<span class="string">"'abc' == 'abc'"</span>, <span class="string">"'abcd' == 'abc'"</span>, <span class="string">"'Abc'.lower() == 'abc'"</span>, <span class="string">"'Abc'.lower() == 'Abc'"</span>, <span class="string">"5 == 5"</span>, <span class="string">"5 == 6"</span>, <span class="string">"5 != 6"</span>, <span class="string">"5 != 5"</span>, <span class="string">"5 &gt; 5"</span>, <span class="string">"5 &gt; 4"</span>, <span class="string">"5 &lt; 5"</span>, <span class="string">"5 &lt; 6"</span>, <span class="string">"5 &gt;= 5"</span>, <span class="string">"5 &gt;= 4"</span>, <span class="string">"5 &lt;= 5"</span>, <span class="string">"5 &lt;= 4"</span>, <span class="string">"True and True"</span>, <span class="string">"True and True"</span>, <span class="string">"False or False"</span>, <span class="string">"False or True"</span>, <span class="string">"1 in [1, 2]"</span>, <span class="string">"1 in [2, 3]"</span>, <span class="string">"1 not in [2, 3]"</span>, <span class="string">"1 not in [1, 2]"</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tset:</span><br><span class="line">    print(i)</span><br><span class="line">    print(eval(i))</span><br><span class="line">    print(<span class="string">"\n"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="5-3-外星人颜色-1-：假设在游戏中刚射杀了一个外星人，请创建一个名为-alien-color-的变量，并将其设置为-‘green’-、-‘yellow’-或-‘red’-。"><a href="#5-3-外星人颜色-1-：假设在游戏中刚射杀了一个外星人，请创建一个名为-alien-color-的变量，并将其设置为-‘green’-、-‘yellow’-或-‘red’-。" class="headerlink" title="5-3 外星人颜色 #1 ：假设在游戏中刚射杀了一个外星人，请创建一个名为 alien_color 的变量，并将其设置为 ‘green’ 、 ‘yellow’ 或 ‘red’ 。"></a>5-3 外星人颜色 #1 ：假设在游戏中刚射杀了一个外星人，请创建一个名为 alien_color 的变量，并将其设置为 ‘green’ 、 ‘yellow’ 或 ‘red’ 。</h2><ul>
+<li>编写一条 if 语句，检查外星人是否是绿色的；如果是，就打印一条消息，指出玩家获得了 5 个点。</li>
+<li>编写这个程序的两个版本，在一个版本中上述测试通过了，而在另一个版本中未通过（未通过测试时没有输出）。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">alien_color = <span class="string">'green'</span></span><br><span class="line"><span class="keyword">if</span> alien_color == <span class="string">'green'</span>:</span><br><span class="line">    print(<span class="string">"You get 5 points."</span>)</span><br><span class="line">alien_color = <span class="string">'yellow'</span></span><br><span class="line"><span class="keyword">if</span> alien_color == <span class="string">'green'</span>:</span><br><span class="line">    print(<span class="string">"You get 5 points."</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="5-4-外星人颜色-2-：像练习-5-3-那样设置外星人的颜色，并编写一个-if-else-结构。"><a href="#5-4-外星人颜色-2-：像练习-5-3-那样设置外星人的颜色，并编写一个-if-else-结构。" class="headerlink" title="5-4 外星人颜色 #2 ：像练习 5-3 那样设置外星人的颜色，并编写一个 if-else 结构。"></a>5-4 外星人颜色 #2 ：像练习 5-3 那样设置外星人的颜色，并编写一个 if-else 结构。</h2><ul>
+<li>如果外星人是绿色的，就打印一条消息，指出玩家因射杀该外星人获得了 5 个点。</li>
+<li>如果外星人不是绿色的，就打印一条消息，指出玩家获得了 10 个点。</li>
+<li>编写这个程序的两个版本，在一个版本中执行 if 代码块，而在另一个版本中执行 else 代码块。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">alien_color = <span class="string">'green'</span></span><br><span class="line"><span class="keyword">if</span> alien_color == <span class="string">'green'</span>:</span><br><span class="line">    print(<span class="string">"You get 5 points."</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"You get 10 points."</span>)</span><br><span class="line">alien_color = <span class="string">'yellow'</span></span><br><span class="line"><span class="keyword">if</span> alien_color == <span class="string">'green'</span>:</span><br><span class="line">    print(<span class="string">"You get 5 points."</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"You get 10 points."</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="5-5-外星人颜色-3-：将练习-5-4-中的-if-else-结构改为-if-elif-else-结构。"><a href="#5-5-外星人颜色-3-：将练习-5-4-中的-if-else-结构改为-if-elif-else-结构。" class="headerlink" title="5-5 外星人颜色 #3 ：将练习 5-4 中的 if-else 结构改为 if-elif-else 结构。"></a>5-5 外星人颜色 #3 ：将练习 5-4 中的 if-else 结构改为 if-elif-else 结构。</h2><ul>
+<li>如果外星人是绿色的，就打印一条消息，指出玩家获得了 5 个点。</li>
+<li>如果外星人是黄色的，就打印一条消息，指出玩家获得了 10 个点。</li>
+<li>如果外星人是红色的，就打印一条消息，指出玩家获得了 15 个点。</li>
+<li>编写这个程序的三个版本，它们分别在外星人为绿色、黄色和红色时打印一条消息。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">alien_color = <span class="string">'green'</span></span><br><span class="line"><span class="keyword">if</span> alien_color == <span class="string">'green'</span>:</span><br><span class="line">    print(<span class="string">"You get 5 points."</span>)</span><br><span class="line"><span class="keyword">elif</span> alien_color == <span class="string">'yellow'</span>:</span><br><span class="line">    print(<span class="string">"You get 10 points."</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"You get 15 points."</span>)</span><br><span class="line">alien_color = <span class="string">'yellow'</span></span><br><span class="line"><span class="keyword">if</span> alien_color == <span class="string">'green'</span>:</span><br><span class="line">    print(<span class="string">"You get 5 points."</span>)</span><br><span class="line"><span class="keyword">elif</span> alien_color == <span class="string">'yellow'</span>:</span><br><span class="line">    print(<span class="string">"You get 10 points."</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"You get 15 points."</span>)</span><br><span class="line">alien_color = <span class="string">'red'</span></span><br><span class="line"><span class="keyword">if</span> alien_color == <span class="string">'green'</span>:</span><br><span class="line">    print(<span class="string">"You get 5 points."</span>)</span><br><span class="line"><span class="keyword">elif</span> alien_color == <span class="string">'yellow'</span>:</span><br><span class="line">    print(<span class="string">"You get 10 points."</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"You get 15 points."</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="5-6-人生的不同阶段-：设置变量-age-的值，再编写一个-if-elif-else-结构，根据-age-的值判断处于人生的哪个阶段。"><a href="#5-6-人生的不同阶段-：设置变量-age-的值，再编写一个-if-elif-else-结构，根据-age-的值判断处于人生的哪个阶段。" class="headerlink" title="5-6 人生的不同阶段 ：设置变量 age 的值，再编写一个 if-elif-else 结构，根据 age 的值判断处于人生的哪个阶段。"></a>5-6 人生的不同阶段 ：设置变量 age 的值，再编写一个 if-elif-else 结构，根据 age 的值判断处于人生的哪个阶段。</h2><ul>
+<li>如果一个人的年龄小于 2 岁，就打印一条消息，指出他是婴儿。</li>
+<li>如果一个人的年龄为 2 （含）～ 4 岁，就打印一条消息，指出他正蹒跚学步。</li>
+<li>如果一个人的年龄为 4 （含）～ 13 岁，就打印一条消息，指出他是儿童。</li>
+<li>如果一个人的年龄为 13 （含）～ 20 岁，就打印一条消息，指出他是青少年。</li>
+<li>如果一个人的年龄为 20 （含）～ 65 岁，就打印一条消息，指出他是成年人。</li>
+<li>如果一个人的年龄超过 65 （含）岁，就打印一条消息，指出他是老年人。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tage</span><span class="params">(age)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> age &lt; <span class="number">2</span>:</span><br><span class="line">        print(<span class="string">"他是婴儿"</span>)</span><br><span class="line">    <span class="keyword">elif</span> age &lt; <span class="number">4</span>:</span><br><span class="line">        print(<span class="string">"他正蹒跚学步"</span>)</span><br><span class="line">    <span class="keyword">elif</span> age &lt; <span class="number">13</span>:</span><br><span class="line">        print(<span class="string">"他是儿童"</span>)</span><br><span class="line">    <span class="keyword">elif</span> age &lt; <span class="number">20</span>:</span><br><span class="line">        print(<span class="string">"他是青少年"</span>)</span><br><span class="line">    <span class="keyword">elif</span> age &lt; <span class="number">65</span>:</span><br><span class="line">        print(<span class="string">"他是成年人"</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"他是老年人"</span>)</span><br><span class="line">tage(<span class="number">1</span>)</span><br><span class="line">tage(<span class="number">3</span>)</span><br><span class="line">tage(<span class="number">12</span>)</span><br><span class="line">tage(<span class="number">19</span>)</span><br><span class="line">tage(<span class="number">64</span>)</span><br><span class="line">tage(<span class="number">65</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="5-7-喜欢的水果-：创建一个列表，其中包含你喜欢的水果，再编写一系列独立的-if-语句，检查列表中是否包含特定的水果。"><a href="#5-7-喜欢的水果-：创建一个列表，其中包含你喜欢的水果，再编写一系列独立的-if-语句，检查列表中是否包含特定的水果。" class="headerlink" title="5-7 喜欢的水果 ：创建一个列表，其中包含你喜欢的水果，再编写一系列独立的 if 语句，检查列表中是否包含特定的水果。"></a>5-7 喜欢的水果 ：创建一个列表，其中包含你喜欢的水果，再编写一系列独立的 if 语句，检查列表中是否包含特定的水果。</h2><ul>
+<li>将该列表命名为 favorite_fruits ，并在其中包含三种水果。</li>
+<li>编写 5 条 if 语句，每条都检查某种水果是否包含在列表中，如果包含在列表中，就打印一条消息，如 “You really like bananas!” 。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tf</span><span class="params">(name)</span>:</span></span><br><span class="line">    favorite_fruits = [<span class="string">"apple"</span>, <span class="string">"banana"</span>, <span class="string">"orange"</span>]</span><br><span class="line">    <span class="keyword">if</span> name <span class="keyword">in</span> favorite_fruits:</span><br><span class="line">        print(<span class="string">"You eally like %s!"</span>%name)</span><br><span class="line">tf(<span class="string">"apple"</span>)</span><br><span class="line">tf(<span class="string">"banana"</span>)</span><br><span class="line">tf(<span class="string">"orange"</span>)</span><br><span class="line">tf(<span class="string">"pear"</span>)</span><br><span class="line">tf(<span class="string">"strawberry"</span>)</span><br></pre></td></tr></table></figure>
+<p>##5-8 以特殊方式跟管理员打招呼 ：创建一个至少包含 5 个用户名的列表，且其中一个用户名为 ‘admin’ 。想象你要编写代码，在每位用户登录网站后都打印一条问候消息。遍历用户名列表，并向每位用户打印一条问候消息。</p>
+<ul>
+<li>如果用户名为 ‘admin’ ，就打印一条特殊的问候消息，如 “Hello admin, would you like to see a status report?” 。</li>
+<li>否则，打印一条普通的问候消息，如 “Hello Eric, thank you for logging in again” 。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">n = [<span class="string">"admin"</span>, <span class="string">"Eric"</span>, <span class="string">"Link"</span>, <span class="string">"Zelda"</span>, <span class="string">"Mifa"</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> n:</span><br><span class="line">    <span class="keyword">if</span> i == <span class="string">'admin'</span>:</span><br><span class="line">        print(<span class="string">"Hello admin, would you like to see a status report?"</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"Hello %s, thank you for logging in again."</span>%i)</span><br></pre></td></tr></table></figure>
+<h2 id="5-9-处理没有用户的情形-：在为完成练习-5-8-编写的程序中，添加一条-if-语句，检查用户名列表是否为空。"><a href="#5-9-处理没有用户的情形-：在为完成练习-5-8-编写的程序中，添加一条-if-语句，检查用户名列表是否为空。" class="headerlink" title="5-9 处理没有用户的情形 ：在为完成练习 5-8 编写的程序中，添加一条 if 语句，检查用户名列表是否为空。"></a>5-9 处理没有用户的情形 ：在为完成练习 5-8 编写的程序中，添加一条 if 语句，检查用户名列表是否为空。</h2><ul>
+<li>如果为空，就打印消息 “We need to find some users!” 。</li>
+<li>删除列表中的所有用户名，确定将打印正确的消息。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">n = [<span class="string">"admin"</span>, <span class="string">"Eric"</span>, <span class="string">"Link"</span>, <span class="string">"Zelda"</span>, <span class="string">"Mifa"</span>]</span><br><span class="line"><span class="keyword">if</span> len(n) == <span class="number">0</span>:</span><br><span class="line">    print(<span class="string">"We need to find some users!"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> n:</span><br><span class="line">    	<span class="keyword">if</span> i == <span class="string">'admin'</span>:</span><br><span class="line">        	print(<span class="string">"Hello admin, would you like to see a status report?"</span>)</span><br><span class="line">    	<span class="keyword">else</span>:</span><br><span class="line">        	print(<span class="string">"Hello %s, thank you for logging in again."</span>%i)</span><br><span class="line">n = []</span><br><span class="line"><span class="keyword">if</span> len(n) == <span class="number">0</span>:</span><br><span class="line">    print(<span class="string">"We need to find some users!"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> n:</span><br><span class="line">    	<span class="keyword">if</span> i == <span class="string">'admin'</span>:</span><br><span class="line">        	print(<span class="string">"Hello admin, would you like to see a status report?"</span>)</span><br><span class="line">    	<span class="keyword">else</span>:</span><br><span class="line">        	print(<span class="string">"Hello %s, thank you for logging in again."</span>%i)</span><br></pre></td></tr></table></figure>
+<h2 id="5-10-检查用户名-：按下面的说明编写一个程序，模拟网站确保每位用户的用户名都独一无二的方式。"><a href="#5-10-检查用户名-：按下面的说明编写一个程序，模拟网站确保每位用户的用户名都独一无二的方式。" class="headerlink" title="5-10 检查用户名 ：按下面的说明编写一个程序，模拟网站确保每位用户的用户名都独一无二的方式。"></a>5-10 检查用户名 ：按下面的说明编写一个程序，模拟网站确保每位用户的用户名都独一无二的方式。</h2><ul>
+<li>创建一个至少包含 5 个用户名的列表，并将其命名为 current_users 。</li>
+<li>再创建一个包含 5 个用户名的列表，将其命名为 new_users ，并确保其中有一两个用户名也包含在列表 current_users 中。</li>
+<li>遍历列表 new_users ，对于其中的每个用户名，都检查它是否已被使用。如果是这样，就打印一条消息，指出需要输入别的用户名；否则，打印一条消息，指出这个用户名未被使用。</li>
+<li>确保比较时不区分大消息；换句话说，如果用户名 ‘John’ 已被使用，应拒绝用户名 ‘JOHN’ 。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">current_users = [<span class="string">"admin"</span>, <span class="string">"Eric"</span>, <span class="string">"Link"</span>, <span class="string">"Zelda"</span>, <span class="string">"Mifa"</span>]</span><br><span class="line">new_users = [<span class="string">"Admin"</span>, <span class="string">"ErIc"</span>, <span class="string">"Mario"</span>, <span class="string">"Peach"</span>, <span class="string">"Komeji Koishi"</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> new_users:</span><br><span class="line">    <span class="keyword">if</span> i.lower() <span class="keyword">in</span> [j.lower() <span class="keyword">for</span> j <span class="keyword">in</span> current_users]:</span><br><span class="line">        print(<span class="string">"Please enter another name."</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"This username is not used."</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="5-11-序数-：序数表示位置，如-1st-和-2nd-。大多数序数都以-th-结尾，只有-1-、-2-和-3-例外。"><a href="#5-11-序数-：序数表示位置，如-1st-和-2nd-。大多数序数都以-th-结尾，只有-1-、-2-和-3-例外。" class="headerlink" title="5-11 序数 ：序数表示位置，如 1st 和 2nd 。大多数序数都以 th 结尾，只有 1 、 2 和 3 例外。"></a>5-11 序数 ：序数表示位置，如 1st 和 2nd 。大多数序数都以 th 结尾，只有 1 、 2 和 3 例外。</h2><ul>
+<li>在一个列表中存储数字 1~9 。</li>
+<li>遍历这个列表。</li>
+<li>在循环中使用一个 if-elif-else 结构，以打印每个数字对应的序数。输出内容应为 1st 、 2nd 、 3rd 、 4th 、 5th 、 6th 、 7th 、 8th 和 9th ，但每个序数都独占一行。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">n = list(range(<span class="number">1</span>, <span class="number">10</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> n:</span><br><span class="line">    <span class="keyword">if</span> i == <span class="number">1</span>:</span><br><span class="line">        print(<span class="string">"1st"</span>)</span><br><span class="line">    <span class="keyword">elif</span> i == <span class="number">2</span>:</span><br><span class="line">        print(<span class="string">"2nd"</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"%dth"</span>%i)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/19/高级编程技术-作业3/" data-id="cjey7jaav0000v4q2fj2aclcf" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-高级编程技术-作业2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -167,7 +276,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/19/高级编程技术-作业2/" data-id="cjex595pu0002ykq2csmkazs3" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/19/高级编程技术-作业2/" data-id="cjey7jabn0002v4q2ikuqgizr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -222,7 +331,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/11/高级编程技术-作业1/" data-id="cjex595pr0001ykq23yzkj1xa" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/11/高级编程技术-作业1/" data-id="cjey7jabo0003v4q26xk59px3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -267,7 +376,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/11/hello-world/" data-id="cjex595pm0000ykq2fe27g36a" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/11/hello-world/" data-id="cjey7jabj0001v4q2ensypxkg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -293,7 +402,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
     </div>
@@ -303,9 +412,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/03/19/高级编程技术-作业3/">高级编程技术 作业3</a>
+          </li>
         
           <li>
             <a href="/2018/03/19/高级编程技术-作业2/">高级编程技术 作业2</a>
